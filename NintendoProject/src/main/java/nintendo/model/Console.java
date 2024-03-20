@@ -1,20 +1,14 @@
 package nintendo.model;
-
-<<<<<<< Updated upstream
-public abstract class Console {
-=======
 import java.time.LocalDate;
 
-public class Console {
->>>>>>> Stashed changes
+public abstract class Console {
 
 	private String nom;
-	private int prix;
+	private Double prix;
 	private LocalDate dateDeSortie;
 
 	
-
-	public Console(String nom, int prix, LocalDate dateDeSortie) {
+	public Console(String nom, Double prix, LocalDate dateDeSortie) {
 		this.nom = nom;
 		this.prix = prix;
 		this.dateDeSortie = dateDeSortie;
@@ -28,11 +22,11 @@ public class Console {
 		this.nom = nom;
 	}
 
-	public int getPrix() {
+	public Double getPrix() {
 		return prix;
 	}
 
-	public void setPrix(int prix) {
+	public void setPrix(Double prix) {
 		this.prix = prix;
 	}
 
