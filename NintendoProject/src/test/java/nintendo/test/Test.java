@@ -19,20 +19,24 @@ public class Test {
 		Client c2=new Client("DUPOND", "JO");
 		Adresse adresse = new Adresse(12, "rue des Tulipes", "Paris"); 
 		Boutique b1 = new Boutique("Magic", adresse); 
-				 
- 
-		 Portable p1 = new Portable("GameBoy",150.0,LocalDate.now()); 
-		 Jeu j1 = new Jeu("Mario",p1,b1); 
-		 Jeu j2 = new Jeu("Foot",p1,b1); 
- 
- 
- 
-		
+
+
+		Portable p1 = new Portable("GameBoy",150.0,LocalDate.now()); 
+		Jeu j1 = new Jeu("Mario",p1,b1); 
+		Jeu j2 = new Jeu("Foot",p1,b1); 
+
+
 
 		List<Achat> achat=new ArrayList();
+		Achat a1=new Achat(j1,LocalDate.now(),30);
+		Achat a2=new Achat(j2,LocalDate.now(),100);
+		achat.add(a1);
+		achat.add(a2);
 		
+		c1.setAchat(achat);
 
-		
+
+
 	}
 
 }
