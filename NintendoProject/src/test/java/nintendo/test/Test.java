@@ -3,6 +3,9 @@ package nintendo.test;
 import java.time.LocalDate;
 import java.util.Scanner;
 
+
+import nintendo.model.Hybride;
+
 import nintendo.model.Adresse;
 import nintendo.model.Boutique;
 import nintendo.model.Console;
@@ -38,9 +41,11 @@ public class Test {
 	
 	public static void main(String[] args) {
 		
+
 		 Console c1 = new Portable("GameBoy",150.0,LocalDate.now());
 		 Jeu j1 = new Jeu("Mario",c1,null);
 		 Jeu j2 = new Jeu("Foot",c1,null);
+
 		 
 
 
